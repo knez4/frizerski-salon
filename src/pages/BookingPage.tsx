@@ -158,7 +158,7 @@ export default function BookingPage() {
               {DAYS.map(d => <div key={d} style={{ textAlign: 'center', fontSize: '11px', color: '#aaa' }}>{d}</div>)}
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px' }}>
-              {Array.from({ length: getFirstDay(currentMonth) }).map((_, i) => <div key={`e-${i}`} />)}
+              {Array.from({ length: getFirstDay(currentMonth) }).map((_, idx) => <div key={`e-${idx}`} />)}
               {Array.from({ length: getDaysInMonth(currentMonth) }).map((_, i) => {
                 const day = i + 1
                 const past = isPastDate(day)
