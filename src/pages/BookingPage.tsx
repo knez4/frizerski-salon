@@ -105,7 +105,7 @@ export default function BookingPage() {
 
         {/* Step indicator */}
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '2rem' }}>
-          {[1, 2, 3, 4].map((n, i) => (
+          {[1, 2, 3, 4].map((n) => (
             <div key={n} style={{ display: 'flex', alignItems: 'center', flex: n < 4 ? 1 : 'none' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <div style={{
